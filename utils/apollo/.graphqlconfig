@@ -1,0 +1,15 @@
+{
+  "name": "yieldfieldsFinance",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "yieldfieldsFinance": {
+        "url": "https://api.thegraph.com/subgraphs/name/sotblad/yieldfieldsfinance",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

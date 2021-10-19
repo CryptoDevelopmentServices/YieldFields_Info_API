@@ -1,1 +1,44 @@
-# YieldFields_Info_API
+# YieldFields API
+
+The YieldFields API is a set of endpoints used by market aggregators (e.g. coinmarketcap.com) to surface YieldFields liquidity
+and volume information. All information is fetched from the underlying subgraphs.
+
+
+## Development
+
+### Install requirements
+
+```shell
+yarn global add vercel
+```
+
+### Build
+
+```shell
+# Install dependencies
+yarn
+
+# Build project
+vercel dev
+```
+
+Endpoints are based on filename inside the `api/` folder.
+
+```shell
+# api/pairs.ts
+curl -X GET 'localhost:3000/api/pairs'
+
+# ...
+```
+
+## Production
+
+### Deploy
+
+Deployments to production are triggered by a webhook when a commit, or a pull-request is merged to `master`.
+
+If you need to force a deployment, use the following command:
+
+```shell
+vercel --prod
+```
